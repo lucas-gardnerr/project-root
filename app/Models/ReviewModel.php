@@ -6,9 +6,8 @@ use CodeIgniter\Model;
 
 class ReviewModel extends Model
 {
-    protected $table = 'reviews';  // Your table name
-    protected $primaryKey = 'id';  // Primary key column
-    protected $allowedFields = ['review', 'rating'];  // Fields that can be inserted/updated
-    protected $useTimestamps = true;  // Automatically handle created_at and updated_at fields
+    protected $table = 'reviews'; // Table name
+    protected $primaryKey = 'id'; // Primary key
+    protected $allowedFields = ['movie_id', 'review', 'rating']; // Allowed fields for insert/update
+    protected $useTimestamps = true; // If you have timestamp fields like created_at/updated_at
 }
-

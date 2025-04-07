@@ -8,3 +8,4 @@ class CinemaModel extends Model {
     protected $primaryKey = 'id';
     protected $allowedFields = ['name', 'location', 'showtimes'];
 }
+ 
